@@ -63,9 +63,8 @@ jobs:
           daemon_off: false
           dockerfile: ./Dockerfile
           context: ./
-          tags: |
-            latest
-            ${{ github.run_number }}
+          tags: latest,${{ github.run_number }}
+
 
         
     
